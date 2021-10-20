@@ -1,0 +1,34 @@
+.recipeContainer {
+  background-color: #cfffe9;
+  width: 50vw;
+  min-height: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border: 5px solid #507062;
+
+  .recipeTitle {
+    font-size: 1.8rem;
+  }
+
+  .recipeIngredients {
+    font-size: 1rem;
+    position: relative;
+    width: 60%;
+  }
+
+  .recipeLink {
+    font-size: 1.1rem;
+
+    a {
+      text-decoration: underline;
+    
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

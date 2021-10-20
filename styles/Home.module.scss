@@ -1,5 +1,6 @@
 .homeContainer {
   padding: 5vh 0;
+  min-height: 90vh;
 
   .title {
     text-align: center;
@@ -16,5 +17,26 @@
     justify-content: center;
     gap: 200px;
   }
+
+  .recipesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    padding: 5vh 0;
+  }
 }
 
+.footer {
+  width: 100vw;
+  display: flex;
+  padding: 20px 40px;
+  background-color: #86bda4;
+  font-size: 0.9rem;
+
+  a {
+    &:hover {
+      color: black;
+    }
+  }
+}
