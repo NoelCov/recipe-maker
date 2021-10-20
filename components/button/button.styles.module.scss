@@ -1,0 +1,12 @@
+.buttonContainer {
+  background-color: #507062;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 250ms;
+
+  &:hover {
+    background-color: #333333;
+  }
+}
