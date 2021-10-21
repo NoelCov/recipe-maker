@@ -1,4 +1,4 @@
-carbs = [
+const carbs = [
   "brown rice",
   "whole grain pasta",
   "whole oats",
@@ -15,7 +15,7 @@ carbs = [
   "sweet potatoes",
 ];
 
-proteins = [
+const proteins = [
   "chicken",
   "ground chicken",
   "ground turkey",
@@ -26,7 +26,7 @@ proteins = [
   "turkey",
 ];
 
-vegetables = [
+const vegetables = [
   "carrots",
   "broccoli",
   "tomatoes",
@@ -40,7 +40,7 @@ vegetables = [
   "peas",
 ];
 
-fruits = [
+const fruits = [
   "strawberries",
   "oranges",
   "grapes",
@@ -54,7 +54,7 @@ fruits = [
   "cantaloupes",
 ];
 
-nutsAndSeeds = [
+const nutsAndSeeds = [
   "almonds",
   "walnuts",
   "hazelnuts",
@@ -75,11 +75,25 @@ const buildRecipe = (proteins, carbs, vegetables, fruits, nutsAndSeeds) => {
   let fruit = getRandom(fruits);
   let nutsAndSeed = getRandom(nutsAndSeeds);
 
-  return `Protein: ${protein}, Carbs: ${carb}, Vegetables: ${vegetable}, Fruit: ${fruit}, NutsOrSeeds: ${nutsAndSeed}
-  -----------------------------------------------------------------------------------------------------------\n`;
+  return {
+    protein,
+    carb,
+    vegetable,
+    fruit,
+    nutsAndSeed,
+  };
 };
 
-for (let i = 0; i <= 10; i++) {
-  console.log(buildRecipe(proteins, carbs, vegetables, fruits, nutsAndSeeds));
-}
+export const buildRecipes = () => {
+  const recipes = [];
+
+  for (let i = 0; i < 5; i++) {
+    recipes.push(
+      buildRecipe(proteins, carbs, vegetables, fruits, nutsAndSeeds)
+    );
+  }
+  console.log(recipes);
+  return recipes;
+};
+
 

@@ -107,19 +107,14 @@ const pickRandom = (recipes) => {
 };
 
 const getRecipe = (recipes) => {
-  let recipe = pickRandom(recipes);
-
-  const name = recipe.name;
-  const link = recipe.url;
-  const ingredients = recipe.ingredients;
-
-  console.log(`${name}`);
-  console.log("--------------------");
-  console.log(`Link: ${link}`);
-  console.log(`\nIngredients:`);
-  ingredients.map((ingredient) => {
-    console.log(`\t${ingredient}`);
-  });
+  return pickRandom(recipes);
 };
 
-getRecipe(recipes);
+export const getRecipes = () => {
+  const recipesData = [];
+  for (let i = 0; i < 5; i++) {
+    recipesData.push(getRecipe(recipes));
+  }
+
+  return recipesData;
+}

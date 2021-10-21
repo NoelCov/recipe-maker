@@ -1,0 +1,66 @@
+.recipeContainer {
+  background-color: #cfffe9;
+  width: 50vw;
+  min-height: 200px;
+  display: flex;
+  text-align: center;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border: 5px solid #507062;
+  position: relative;
+
+  @media screen and (max-width: 550px) {
+    width: 85vw;
+  }
+
+  .recipeTitle {
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 550px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .recipeIngredients {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    flex-flow: wrap;
+    gap: 20px;
+
+    @media screen and (max-width: 550px) {
+      font-size: 0.9rem;
+    }
+
+    .recipeIngredientProperty {
+      font-weight: 800;
+    }
+
+    .recipeIngredient {
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .recipeLink {
+    font-size: 1.1rem;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: black;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 1rem;
+    }
+  }
+}

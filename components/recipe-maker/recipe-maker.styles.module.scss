@@ -1,0 +1,39 @@
+.recipeContainer {
+  background-color: #cfffe9;
+  width: 30vw;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border: 5px solid #507062;
+
+  @media screen and (max-width: 550px) {
+    width: 80vw;
+    padding: 20px;
+  }
+
+  .recipeProperty {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+
+    @media screen and (max-width: 550px) {
+      font-size: 0.9rem;
+      font-weight: 600;
+      gap: 10px;
+    }
+
+    span {
+      font-size: 1rem;
+      font-weight: normal;
+
+      @media screen and (max-width: 550px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
