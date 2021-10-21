@@ -47,11 +47,15 @@ const fruits = [
   "apples",
   "bananas",
   "pears",
-  "strawberries",
   "dates",
   "melons",
   "peaches",
-  "cantaloupes",
+  "cantaloup",
+  "mangos",
+  "raspberries",
+  "blueberries",
+  "blackberries",
+  "cranberries",
 ];
 
 const nutsAndSeeds = [
@@ -95,5 +99,3 @@ export const buildRecipes = () => {
   console.log(recipes);
   return recipes;
 };
-
-
